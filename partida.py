@@ -115,6 +115,15 @@ col4.metric(selecao2, prob[2])
 col5.image(selecoes.loc[selecao2, 'LinkBandeiraGrande'])
 
 st.markdown('---')
+st.markdown("## Jogador destaque")
+
+col6, col7, col8, col9 = st.columns(4)
+col6.image(selecoes.loc[selecao1, 'FotoJogadorDestaque'])
+col7.metric('País:',selecao1)
+col8.image(selecoes.loc[selecao2, 'FotoJogadorDestaque'])
+col9.metric('País:',selecao2)
+
+st.markdown('---')
 st.markdown("## 📊 Probabilidades dos Placares") 
 
 def aux(x):
